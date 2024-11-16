@@ -117,6 +117,16 @@ NR - общее количество строк в обрабатываемом 
 
 Подробнее про awk [тут](https://losst.pro/ispolzovanie-awk-v-linux#google_vignette).
 
+По итогу будет выведено пять записей + шапка таблицы:
+```bash
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  21720 12032 ?        Ss   12:49   0:00 /sbin/init
+root          46  0.0  0.0  50436 13896 ?        Ss   12:49   0:00 /usr/lib/systemd/systemd-journald
+systemd+      93  0.0  0.0  18980  7424 ?        Ss   12:49   0:00 /usr/lib/systemd/systemd-networkd
+systemd+     210  0.0  0.0  21576 12416 ?        Ss   12:49   0:00 /usr/lib/systemd/systemd-resolved
+root         215  0.0  0.0  18028  7808 ?        S<s  12:49   0:00 /usr/lib/systemd/systemd-logind
+```
+
 #### 5. Операции с файлами
 Создает переменную `new_dir` и присваивает ей значение "new_directory".
 ```bash
