@@ -156,3 +156,12 @@ rm $new_file
 ```bash
 rmdir $new_dir
 ```
+
+### Дополнение
+Для обращения к переменной, нужно поставить знак $ перед ее названием:
+```bash
+root@gitlab:~# new_dir="new_directory"
+root@gitlab:~# echo $new_dir
+new_directory
+```
+
